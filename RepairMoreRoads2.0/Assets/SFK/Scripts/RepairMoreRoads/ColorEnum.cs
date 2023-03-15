@@ -14,6 +14,7 @@ public class ColorEnum : MonoBehaviour
 
     public ColorIdentifier myColor;
     public ColorPropertySetter colorPropertySetter;
+    public ParticleSystem particleSystem ;
 
     public Color GetColor(ColorIdentifier c)
     {
@@ -34,5 +35,6 @@ public class ColorEnum : MonoBehaviour
     private void Start()
     {
         colorPropertySetter.ApplyColor(GetColor(myColor));
+        particleSystem .startColor = GetColor(myColor);
     }
 }
