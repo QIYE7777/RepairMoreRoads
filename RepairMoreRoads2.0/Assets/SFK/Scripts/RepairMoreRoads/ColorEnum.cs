@@ -35,6 +35,6 @@ public class ColorEnum : MonoBehaviour
     private void Start()
     {
         colorPropertySetter.ApplyColor(GetColor(myColor));
-        particleSystem .startColor = GetColor(myColor);
+        //particleSystem .startColor = GetColor(myColor);
     }
 }

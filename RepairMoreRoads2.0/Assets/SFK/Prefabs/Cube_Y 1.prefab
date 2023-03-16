@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4628272313393754584}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkCollider: {fileID: 8286712025965708196}
+  sameColor: 0
 --- !u!114 &8286712025965708203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +288,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 1f090c02580694e448c76684bc222fa0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.7
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -694,7 +695,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.96
+      scalar: 0.57
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1071,13 +1072,13 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 5.79
+    angle: 1.69
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Position: {x: 0, y: 0, z: -0.7}
+    m_Rotation: {x: -96.83, y: 0, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -1157,7 +1158,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1.12
+      value: 0.79
       mode: 0
       spread: 0
       speed:
@@ -1276,7 +1277,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2

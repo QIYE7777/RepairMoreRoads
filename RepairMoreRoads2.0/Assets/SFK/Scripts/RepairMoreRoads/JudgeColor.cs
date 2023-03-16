@@ -7,6 +7,7 @@ public class JudgeColor : MonoBehaviour
     public BoxCollider checkCollider;
     ColorEnum colorEnum;
     HoleBehavior holeBehavior;
+    public bool sameColor ;
 
     private void Awake()
     {
@@ -21,11 +22,13 @@ public class JudgeColor : MonoBehaviour
             if (colorEnum.myColor == other.GetComponent<ColorEnum>().myColor)
             {
                 Debug.Log("same");
+                sameColor = true;
                 holeBehavior.FillHole();
             }
             else
             {
                 Debug.Log("diff");
+                sameColor = false ;
                 holeBehavior.ShootBall();
             }
         }
