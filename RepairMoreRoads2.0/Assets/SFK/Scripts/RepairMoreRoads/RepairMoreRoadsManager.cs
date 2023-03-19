@@ -6,8 +6,8 @@ public class RepairMoreRoadsManager : MonoBehaviour
 {
     public GameObject player;
     public static RepairMoreRoadsManager instance;
-    public HoleBehavior hb;
     public float DeadPeople;
+    public float DelayGameOverTime = 3f;
 
     private void Awake()
     {
@@ -20,10 +20,11 @@ public class RepairMoreRoadsManager : MonoBehaviour
         GameOver();
     }
 
-    void GameOver()
+    public IEnumerator GameOver()
     {
         if (DeadPeople >= 10)
         {
+            yield return new WaitForSeconds (DelayGameOverTime);
             Debug.Log("GameOver");
             SceneManager.LoadScene(0);
         }
