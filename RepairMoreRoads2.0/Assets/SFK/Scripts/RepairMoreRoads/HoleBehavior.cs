@@ -11,16 +11,17 @@ public class HoleBehavior : MonoBehaviour
 
     private void Awake()
     {
+        
+    }
+
+    private void Start()
+    {
         if (gameObject == null)
             Debug.LogWarning(gameObject.name);
         closeDoor = GetComponent<AudioSource>();
         particleSystem = GetComponent<ParticleSystem>();
         sb = RepairMoreRoadsManager.instance.player.GetComponent<SpwanBall>();
         colorEnum = GetComponent<ColorEnum>();
-    }
-
-    private void Start()
-    {
         var nowColor = colorEnum.GetColor(colorEnum.myColor);
         SetParticleColor(nowColor);
     }
