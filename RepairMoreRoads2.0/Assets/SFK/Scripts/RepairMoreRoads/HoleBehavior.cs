@@ -36,7 +36,7 @@ public class HoleBehavior : MonoBehaviour
 
     public void DestroyBall(Collider ball)
     {
-        Destroy(ball.gameObject,3 );
+        //Destroy(ball.gameObject,3 );
     }
 
     void SpawnNewBall()

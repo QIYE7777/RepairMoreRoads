@@ -229,7 +229,7 @@ MonoBehaviour:
   applyInInspector: 1
   applyOnStart: 0
   materialRenderer: {fileID: 4628272313393754585}
-  materialColor: {r: 0.32941177, g: 0.7372549, b: 0.8980392, a: 0}
+  materialColor: {r: 0.9490197, g: 0.38823533, b: 0.39607847, a: 0}
   colorProperty: _Color
 --- !u!114 &4628272312987907855
 MonoBehaviour:
@@ -246,7 +246,6 @@ MonoBehaviour:
   myColor: 0
   colorPropertySetter: {fileID: 8286712025965708199}
   particleSystem: {fileID: 2141640779226418663}
-  holeBehavior: {fileID: 8286712025965708203}
 --- !u!114 &8286712025965708202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +275,7 @@ MonoBehaviour:
   closeDoor: {fileID: 2919573872427815584}
   particleSystem: {fileID: 2141640779226418663}
   sb: {fileID: 4459864849709204770, guid: 47a0605a54225264f877f3e1d81452fa, type: 3}
+  colorEnum: {fileID: 0}
 --- !u!82 &2919573872427815584
 AudioSource:
   m_ObjectHideFlags: 0
