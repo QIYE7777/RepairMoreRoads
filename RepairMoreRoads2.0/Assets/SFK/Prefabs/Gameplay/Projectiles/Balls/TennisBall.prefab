@@ -4827,6 +4827,9 @@ GameObject:
   - component: {fileID: 832584935745366282}
   - component: {fileID: 832584935745366285}
   - component: {fileID: 832584935745366284}
+  - component: {fileID: 263251701}
+  - component: {fileID: 263251711}
+  - component: {fileID: 263251712}
   m_Layer: 0
   m_Name: TennisBall
   m_TagString: Ball
@@ -4950,10 +4953,10 @@ MonoBehaviour:
   StopEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832584935733812200}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Stop
-        m_Mode: 6
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SpawnerBase, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4962,7 +4965,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 832584935733812200}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
         m_MethodName: Clear
         m_Mode: 1
@@ -4977,9 +4980,9 @@ MonoBehaviour:
   HitEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832584935733812200}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Stop
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SpawnerBase, Assembly-CSharp
+        m_MethodName: TriggerSpawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4989,7 +4992,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 832584935733812200}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
         m_MethodName: Play
         m_Mode: 1
@@ -5005,3 +5008,47 @@ MonoBehaviour:
   maxBounces: 1
   PointLoseEvent: {fileID: 11400000, guid: 7c3c0b92b9236104ba2282d30a173356, type: 2}
   PointWinEvent: {fileID: 11400000, guid: 363f9e88639acef429575297453c90bb, type: 2}
+--- !u!114 &263251701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832584935745366287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79bb3fd0bec4544b8eef8f6c3584055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applyInInspector: 1
+  applyOnStart: 0
+  materialRenderer: {fileID: 832584935745366283}
+  materialColor: {r: 0, g: 0, b: 0, a: 1}
+  colorProperty: _Color
+--- !u!114 &263251711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832584935745366287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd99a8a40d92f2f4c9852c9615b664b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myColor: 0
+  colorPropertySetter: {fileID: 263251701}
+  particleSystem: {fileID: 0}
+--- !u!114 &263251712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832584935745366287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67977f7f0819886408fc103bea5e2c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

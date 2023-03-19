@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 2141640779226418663}
   m_Layer: 0
   m_Name: Cube_Y 1
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8286712025965708194}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.78728485, y: 5.9803715, z: -4.874814}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
@@ -246,6 +246,7 @@ MonoBehaviour:
   myColor: 0
   colorPropertySetter: {fileID: 8286712025965708199}
   particleSystem: {fileID: 2141640779226418663}
+  holeBehavior: {fileID: 8286712025965708203}
 --- !u!114 &8286712025965708202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkCollider: {fileID: 8286712025965708196}
-  sameColor: 0
 --- !u!114 &8286712025965708203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +275,7 @@ MonoBehaviour:
   fillHoleTrans: {fileID: 4628272313658472738}
   closeDoor: {fileID: 2919573872427815584}
   particleSystem: {fileID: 2141640779226418663}
+  sb: {fileID: 4459864849709204770, guid: 47a0605a54225264f877f3e1d81452fa, type: 3}
 --- !u!82 &2919573872427815584
 AudioSource:
   m_ObjectHideFlags: 0
@@ -526,7 +527,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
