@@ -26,13 +26,13 @@ public class ColorEnum : MonoBehaviour
         switch (c)
         {
             case ColorIdentifier.Blue:
-                return Color.blue ;
+                return new Color(0.3f,0.7f,0.9f) ;
             case ColorIdentifier.Red:
-                return Color.red ;
+                return new Color(0.9f, 0.4f, 0.4f);
             case ColorIdentifier.Yellow:
-                return Color.yellow ;
+                return new Color(0.9f,0.8f,0.3f) ;
             case ColorIdentifier.Green:
-                return new Color(0.1f, 1f, 0f);
+                return new Color(0.3f, 0.9f, 0.3f);
         }
         return Color.white;
     }

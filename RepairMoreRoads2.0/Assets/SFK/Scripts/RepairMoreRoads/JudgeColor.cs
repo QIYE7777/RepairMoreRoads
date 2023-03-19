@@ -30,6 +30,10 @@ public class JudgeColor : MonoBehaviour
                 holeBehavior.ShootBall();
             }
         }
+        if (other.tag == "People")
+        {
+            holeBehavior.AfterTouchPeople(other);
+        }
     }
 
 }

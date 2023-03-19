@@ -51,6 +51,20 @@ public class HoleBehavior : MonoBehaviour
         newMain.startColor = color;
     }
 
+    public void AfterTouchPeople(Collider people)
+    {
+        DestroyPeple(people);
+        fillHoleTrans.DOScaleZ(2, 1).SetEase(Ease.InCubic);
+        particleSystem.Play();
+        closeDoor.Play();
+        RepairMoreRoadsManager.instance.DeadPeople = RepairMoreRoadsManager.instance.DeadPeople + 1;
+        Debug.Log(RepairMoreRoadsManager.instance.DeadPeople);
+    }
+    public void DestroyPeple(Collider people)
+    {
+        Destroy(people.gameObject);
+    }
+
     public void ShootBall()
     {
 
