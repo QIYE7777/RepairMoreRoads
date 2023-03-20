@@ -26,8 +26,8 @@ public class JudgeColor : MonoBehaviour
             }
             else
             {
-                Debug.Log("diff");
                 holeBehavior.ShootBall();
+                Debug.Log("diff");
             }
         }
         if (other.tag == "People")

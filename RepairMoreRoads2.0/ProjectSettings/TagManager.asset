@@ -12,6 +12,8 @@ TagManager:
   - Net
   - Hole
   - People
+  - ForwardBall
+  - BackwardBall
   layers:
   - Default
   - TransparentFX

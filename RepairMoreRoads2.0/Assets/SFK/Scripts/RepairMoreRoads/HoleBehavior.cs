@@ -7,7 +7,8 @@ public class HoleBehavior : MonoBehaviour
     public AudioSource closeDoor;
     public ParticleSystem particleSystem;
     public SpwanBall sb;
-    public ColorEnum colorEnum; 
+    public ColorEnum colorEnum;
+    public HoleShooter holeShooter;
 
     private void Awake()
     {
@@ -28,7 +29,7 @@ public class HoleBehavior : MonoBehaviour
 
     public void FillHole(Collider ball)
     {
-        fillHoleTrans.DOScaleZ(2, 1).SetEase(Ease.InCubic);
+        fillHoleTrans.DOScaleZ(4, 1).SetEase(Ease.InCubic);
         particleSystem.Play();
         closeDoor.Play();
         DestroyBall(ball);
@@ -54,11 +55,11 @@ public class HoleBehavior : MonoBehaviour
     public void AfterTouchPeople(Collider people)
     {
         DestroyPeple(people);
-        fillHoleTrans.DOScaleZ(2, 1).SetEase(Ease.InCubic);
+        fillHoleTrans.DOScaleZ(4, 1).SetEase(Ease.InCubic);
         particleSystem.Play();
         closeDoor.Play();
-        RepairMoreRoadsManager.instance.DeadPeople = RepairMoreRoadsManager.instance.DeadPeople + 1;
-        Debug.Log(RepairMoreRoadsManager.instance.DeadPeople);
+        RepairMoreRoadsManager.instance.deadPeople = RepairMoreRoadsManager.instance.deadPeople + 1;
+        Debug.Log(RepairMoreRoadsManager.instance.deadPeople);
     }
     public void DestroyPeple(Collider people)
     {
@@ -67,6 +68,9 @@ public class HoleBehavior : MonoBehaviour
 
     public void ShootBall()
     {
-
+        Debug.LogWarning(holeShooter.gameObject);
+        holeShooter.SpawnBall();
+        //holeShooter.rigidbody  = GetComponent<Rigidbody>();
+        //holeShooter.Shoot();
     }
 }
