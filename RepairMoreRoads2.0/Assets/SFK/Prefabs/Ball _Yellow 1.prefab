@@ -4830,10 +4830,10 @@ GameObject:
   - component: {fileID: 8451672106218278148}
   - component: {fileID: -4008619899267324714}
   - component: {fileID: 4569199370247972510}
-  - component: {fileID: 4488038632556972603}
-  - component: {fileID: -7363275018789580583}
+  - component: {fileID: -2420843081747404097}
+  - component: {fileID: -1896795026716423104}
   m_Layer: 0
-  m_Name: Ball _Blue
+  m_Name: Ball _Yellow 1
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5007,7 +5007,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -7363275018789580583}
+      - m_Target: {fileID: -1896795026716423104}
         m_TargetAssemblyTypeName: BallBehavior, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
@@ -5052,9 +5052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd99a8a40d92f2f4c9852c9615b664b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myColor: 0
+  myColor: 2
   colorPropertySetter: {fileID: 8451672106218278158}
-  isFromHole: 0
+  isFromHole: 1
 --- !u!82 &-4008619899267324714
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5259,7 +5259,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &4488038632556972603
+--- !u!114 &-2420843081747404097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5272,7 +5272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
---- !u!114 &-7363275018789580583
+--- !u!114 &-1896795026716423104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

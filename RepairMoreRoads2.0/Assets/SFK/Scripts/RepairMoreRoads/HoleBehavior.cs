@@ -5,10 +5,12 @@ public class HoleBehavior : MonoBehaviour
 {
     public Transform fillHoleTrans;
     public AudioSource closeDoor;
+    public AudioSource wrongBall;
     public ParticleSystem particleSystem;
     public SpwanBall sb;
     public ColorEnum colorEnum;
     public HoleShooter holeShooter;
+    public Animator anim;
 
     private void Awake()
     {
@@ -68,7 +70,8 @@ public class HoleBehavior : MonoBehaviour
 
     public void ShootBall()
     {
-        Debug.LogWarning(holeShooter.gameObject);
+        //anim.SetTrigger("IsWrong");
+        wrongBall.Play();
         holeShooter.SpawnBall();
         //holeShooter.rigidbody  = GetComponent<Rigidbody>();
         //holeShooter.Shoot();

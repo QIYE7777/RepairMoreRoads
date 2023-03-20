@@ -4830,6 +4830,8 @@ GameObject:
   - component: {fileID: 8451672106218278148}
   - component: {fileID: -4008619899267324714}
   - component: {fileID: 4569199370247972510}
+  - component: {fileID: -2420843081747404097}
+  - component: {fileID: 669174154996494123}
   m_Layer: 0
   m_Name: Ball _Yellow
   m_TagString: Ball
@@ -5005,6 +5007,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 669174154996494123}
+        m_TargetAssemblyTypeName: BallBehavior, Assembly-CSharp
+        m_MethodName: CloseIsFromHole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   bounces: 0
   maxBounces: 1
   PointLoseEvent: {fileID: 11400000, guid: 7c3c0b92b9236104ba2282d30a173356, type: 2}
@@ -5040,7 +5054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myColor: 2
   colorPropertySetter: {fileID: 8451672106218278158}
-  particleSystem: {fileID: 0}
+  isFromHole: 0
 --- !u!82 &-4008619899267324714
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5245,6 +5259,32 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &-2420843081747404097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9135464527485633268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56731ac121f7b94a8e1a9701d80a7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+--- !u!114 &669174154996494123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9135464527485633268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67977f7f0819886408fc103bea5e2c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ce: {fileID: 8451672106218278148}
 --- !u!1 &9135464527524425744
 GameObject:
   m_ObjectHideFlags: 0

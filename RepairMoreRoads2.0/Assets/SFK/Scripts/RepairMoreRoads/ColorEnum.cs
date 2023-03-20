@@ -14,12 +14,7 @@ public class ColorEnum : MonoBehaviour
 
     public ColorIdentifier myColor;
     public ColorPropertySetter colorPropertySetter;
-    public ParticleSystem particleSystem ;
-
-    private void Awake()
-    {
-        
-    }
+    public bool isFromHole;
 
     public Color GetColor(ColorIdentifier c)
     {

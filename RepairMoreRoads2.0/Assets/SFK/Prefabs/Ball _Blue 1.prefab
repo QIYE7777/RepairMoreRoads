@@ -4831,9 +4831,9 @@ GameObject:
   - component: {fileID: -4008619899267324714}
   - component: {fileID: 4569199370247972510}
   - component: {fileID: 4488038632556972603}
-  - component: {fileID: -7363275018789580583}
+  - component: {fileID: -2327413321261109859}
   m_Layer: 0
-  m_Name: Ball _Blue
+  m_Name: Ball _Blue 1
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5007,9 +5007,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -7363275018789580583}
+      - m_Target: {fileID: -2327413321261109859}
         m_TargetAssemblyTypeName: BallBehavior, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: CloseIsFromHole
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5054,7 +5054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myColor: 0
   colorPropertySetter: {fileID: 8451672106218278158}
-  isFromHole: 0
+  isFromHole: 1
 --- !u!82 &-4008619899267324714
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5272,7 +5272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
---- !u!114 &-7363275018789580583
+--- !u!114 &-2327413321261109859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

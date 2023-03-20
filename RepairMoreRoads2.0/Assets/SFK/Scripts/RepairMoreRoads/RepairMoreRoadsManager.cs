@@ -26,6 +26,14 @@ public class RepairMoreRoadsManager : MonoBehaviour
             StartCoroutine ( GameOver());
             IsShowed = true; ;
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            StartCoroutine(GameOver());
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            player.GetComponent<SpawnerPosition>().TriggerSpawn();
+        }
     }
 
     public IEnumerator GameOver()
@@ -36,4 +44,5 @@ public class RepairMoreRoadsManager : MonoBehaviour
             SceneManager.LoadScene(0);
 
     } 
+
 }

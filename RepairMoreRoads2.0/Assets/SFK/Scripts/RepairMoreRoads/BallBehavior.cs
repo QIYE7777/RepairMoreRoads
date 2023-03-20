@@ -4,22 +4,10 @@ using UnityEngine;
 
 public class BallBehavior : MonoBehaviour
 {
-    /*
-    public JudgeColor judgeColor;
-    void Awake()
-    {
-        judgeColor = GetComponent<JudgeColor>();
-    }
+    public ColorEnum ce;
 
-    private void OnTriggerEnter(Collider other)
+    public void CloseIsFromHole()
     {
-        if (other.tag == "Hole" && other.GetComponent<JudgeColor>().sameColor == true )
-        {
-            Debug.Log("destroy");
-            Destroy(gameObject );
-        }
-        
+        ce.isFromHole = false;
     }
-    */
-
 }
