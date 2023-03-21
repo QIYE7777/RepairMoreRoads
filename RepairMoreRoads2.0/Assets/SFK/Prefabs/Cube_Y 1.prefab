@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myColor: 0
   colorPropertySetter: {fileID: 8286712025965708199}
-  particleSystem: {fileID: 2141640779226418663}
+  isFromHole: 0
 --- !u!114 &8286712025965708202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkCollider: {fileID: 8286712025965708196}
+  differColorHas: 0
 --- !u!114 &8286712025965708203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,10 +276,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fillHoleTrans: {fileID: 4628272313658472738}
   closeDoor: {fileID: 2919573872427815584}
+  wrongBall: {fileID: 0}
   particleSystem: {fileID: 2141640779226418663}
   sb: {fileID: 0}
   colorEnum: {fileID: 4628272312987907855}
   holeShooter: {fileID: 7575494088843775015}
+  anim: {fileID: 0}
 --- !u!82 &2919573872427815584
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5169,6 +5172,7 @@ MonoBehaviour:
   rigidbody: {fileID: 0}
   force: 2.72
   sp: {fileID: 3632066498078268698}
+  changeHasState: {fileID: 8286712025965708202}
 --- !u!1001 &8373210460672148251
 PrefabInstance:
   m_ObjectHideFlags: 0

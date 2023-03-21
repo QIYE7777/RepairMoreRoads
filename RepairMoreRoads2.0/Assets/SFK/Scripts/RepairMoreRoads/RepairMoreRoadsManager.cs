@@ -33,7 +33,7 @@ public class RepairMoreRoadsManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            mySpawn .SpawnTriggerNew ();
+            mySpawn.SpawnTriggerNew();
         }
     }
 

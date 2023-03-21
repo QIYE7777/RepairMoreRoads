@@ -12,21 +12,28 @@ public class JudgeColor : MonoBehaviour
     {
         colorEnum = GetComponent<ColorEnum> ();
         holeBehavior = GetComponent<HoleBehavior>();
+        sameColorHas = false;
     }
+
+    bool sameColorHas;
+    public bool differColorHas;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Ball" )
         {
-            if (colorEnum.myColor == other.GetComponent<ColorEnum>().myColor)
+            if (colorEnum.myColor == other.GetComponent<ColorEnum>().myColor && sameColorHas == false )
             {
                 Debug.Log("same");
+                sameColorHas = true;
                 holeBehavior.FillHole(other);
                 
             }
-            else
+            if (colorEnum.myColor != other.GetComponent<ColorEnum>().myColor && differColorHas == false)
             {
                 holeBehavior.ShootBall();
+                differColorHas = true;
+                StartCoroutine (Delay());
                 Debug.Log("diff");
             }
         }
@@ -36,4 +43,9 @@ public class JudgeColor : MonoBehaviour
         }
     }
 
+    public IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.25f);
+        differColorHas = false;
+    }
 }

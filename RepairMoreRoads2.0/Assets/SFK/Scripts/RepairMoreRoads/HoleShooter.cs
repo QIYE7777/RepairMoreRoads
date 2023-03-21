@@ -7,6 +7,7 @@ public class HoleShooter : MonoBehaviour
     public Rigidbody rigidbody;
     public float force;
     public SpawnerPosition sp;
+    public JudgeColor changeHasState;
 
     private void FixedUpdate()
     {
@@ -16,6 +17,8 @@ public class HoleShooter : MonoBehaviour
     public void Shoot()
     {
         rigidbody.AddForce(Vector3.forward  * force, ForceMode.Impulse);
+        changeHasState.differColorHas = false;
+        Debug.Log(changeHasState.differColorHas);
     }
 
     public void SpawnBall()

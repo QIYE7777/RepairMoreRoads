@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkCollider: {fileID: 5704582779491207000}
+  differColorHas: 0
 --- !u!114 &5704582779491206999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5043,6 +5044,7 @@ MonoBehaviour:
   rigidbody: {fileID: 0}
   force: 3
   sp: {fileID: 1030583527806851558}
+  changeHasState: {fileID: 5704582779491206998}
 --- !u!82 &-196452818208028088
 AudioSource:
   m_ObjectHideFlags: 0
