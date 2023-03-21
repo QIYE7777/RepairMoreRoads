@@ -21,6 +21,7 @@ public class ReceiverController : MonoBehaviour
                 Rigidbody rd = other.GetComponent<Rigidbody>();
                 siu.Play();
                 rd.MovePosition(playerRd.position + new Vector3 (0f,2.5f,6f));
+                other.GetComponent<ColorEnum>().isFromHole = false;
             }
         }
 

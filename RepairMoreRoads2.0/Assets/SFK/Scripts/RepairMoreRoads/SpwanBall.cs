@@ -5,10 +5,11 @@ using UnityEngine;
 public class SpwanBall : MonoBehaviour
 {
     public SpawnerPosition sp;
+    public MySpawn ms;
 
     public void Spawn()
     {
-        sp.TriggerSpawn();
+        ms.SpawnTriggerNew ();
         Debug.Log("spawn new ball");
     }
 }
