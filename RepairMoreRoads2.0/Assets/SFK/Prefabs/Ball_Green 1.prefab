@@ -4830,7 +4830,6 @@ GameObject:
   - component: {fileID: 8451672106218278148}
   - component: {fileID: -4008619899267324714}
   - component: {fileID: 4569199370247972510}
-  - component: {fileID: 4289720554908743169}
   - component: {fileID: -4927289644360371776}
   m_Layer: 0
   m_Name: Ball_Green 1
@@ -5259,19 +5258,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &4289720554908743169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9135464527485633268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56731ac121f7b94a8e1a9701d80a7eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
 --- !u!114 &-4927289644360371776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5285,6 +5271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ce: {fileID: 8451672106218278148}
+  rb: {fileID: 9135464527485633270}
 --- !u!1 &9135464527524425744
 GameObject:
   m_ObjectHideFlags: 0

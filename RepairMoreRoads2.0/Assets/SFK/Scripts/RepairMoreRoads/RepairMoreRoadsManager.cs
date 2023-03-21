@@ -10,6 +10,7 @@ public class RepairMoreRoadsManager : MonoBehaviour
     public float delayGameOverTime = 3f;
     public Canvas gameOverImagine;
     bool IsShowed = false;
+    public MySpawn mySpawn;
 
     private void Awake()
     {
@@ -32,7 +33,7 @@ public class RepairMoreRoadsManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            player.GetComponent<SpawnerPosition>().TriggerSpawn();
+            mySpawn .SpawnTriggerNew ();
         }
     }
 
