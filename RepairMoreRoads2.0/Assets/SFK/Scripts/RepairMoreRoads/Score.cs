@@ -10,6 +10,7 @@ public class Score : MonoBehaviour
     void Update()
     {
         //scoreText.text = player.position.z .ToString ("0");
-        scoreText.text =  manager.deadPeople.ToString();
+        float dead = 10 - manager.deadPeople; 
+        scoreText.text =  dead.ToString();
     }
 }
