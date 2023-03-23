@@ -5,9 +5,11 @@ public class Score : MonoBehaviour
 {
     public Transform player;
     public Text scoreText;
+    public RepairMoreRoadsManager manager;
 
     void Update()
     {
-        scoreText.text = player.position.z .ToString ("0");
+        //scoreText.text = player.position.z .ToString ("0");
+        scoreText.text =  manager.deadPeople.ToString();
     }
 }
