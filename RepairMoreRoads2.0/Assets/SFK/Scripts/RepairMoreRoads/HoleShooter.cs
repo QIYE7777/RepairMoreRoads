@@ -17,8 +17,8 @@ public class HoleShooter : MonoBehaviour
     public void Shoot()
     {
         rigidbody.AddForce(Vector3.forward  * force, ForceMode.Impulse);
-        changeHasState.differColorHas = false;
-        Debug.Log(changeHasState.differColorHas);
+        //changeHasState.differColorHas = false;
+        //Debug.Log(changeHasState.differColorHas);
     }
 
     public void SpawnBall()

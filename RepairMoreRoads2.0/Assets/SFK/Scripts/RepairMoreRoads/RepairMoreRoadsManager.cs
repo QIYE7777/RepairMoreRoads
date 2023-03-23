@@ -24,6 +24,7 @@ public class RepairMoreRoadsManager : MonoBehaviour
         if (deadPeople >= 10 && IsShowed == false )
         {
             gameOverImagine.enabled = !gameOverImagine.enabled;
+            player.GetComponent<PeopleMovement>().enabled = !player.GetComponent<PeopleMovement>().enabled;
             StartCoroutine ( GameOver());
             IsShowed = true; ;
         }

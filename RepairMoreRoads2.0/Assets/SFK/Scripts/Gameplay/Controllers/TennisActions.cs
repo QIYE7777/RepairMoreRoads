@@ -34,6 +34,8 @@ public class TennisActions : MonoBehaviour
     public bool CanShoot { get; protected set; } = true;
     public Vector3 AimPosition { get; set; }
 
+    public GameObject hitCollider;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(BALL_TAG))
@@ -42,6 +44,9 @@ public class TennisActions : MonoBehaviour
             //b.Hit((1 - UpForce) * HitForce * AimDirection + HitForce * UpForce * Vector3.up, gameObject);
             CalculateForce(b.transform);
             b.Hit(HitForce, gameObject);
+
+            //if (hitCollider != null)
+                //hitCollider.SetActive(false);
         }
     }
 
