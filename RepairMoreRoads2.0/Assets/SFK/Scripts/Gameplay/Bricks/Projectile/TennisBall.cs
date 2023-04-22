@@ -66,7 +66,7 @@ public class TennisBall : Ball
 
     public override void Hit(Vector3 force, GameObject hitSource)
     {
-
+        Debug.Log("tennis Hit " + hitSource);
         base.Hit(force, hitSource);
         LastHitter = hitSource;
     }
