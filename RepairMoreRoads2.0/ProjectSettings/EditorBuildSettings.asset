@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SFK/_Levels/_RapairRoads1.0.unity
-    guid: 2a51551a21079104bb105ed3374aa64e
-  - enabled: 1
     path: Assets/SFK/_Levels/_Begin.unity
     guid: 1e3f004f94f222b47b04ff1fcef81c3f
+  - enabled: 1
+    path: Assets/SFK/_Levels/_RapairRoads1.0.unity
+    guid: 2a51551a21079104bb105ed3374aa64e
   m_configObjects: {}

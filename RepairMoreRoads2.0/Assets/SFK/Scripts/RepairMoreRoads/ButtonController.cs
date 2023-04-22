@@ -12,7 +12,8 @@ public class ButtonController : MonoBehaviour
     public IEnumerator Delay()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(0);
+        Debug.Log("button");
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
