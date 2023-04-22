@@ -34,8 +34,9 @@ public class AimControlAI : AimControlBase
         Vector3 center = new((minShootPos.x + maxShootPos.x) / 2, 0, (minShootPos.y + maxShootPos.y) / 2);
         Vector3 scale = new(Mathf.Abs(minShootPos.x - maxShootPos.x), 1, Mathf.Abs(minShootPos.y - maxShootPos.y));
         Gizmos.DrawCube(center, scale);
+#if UNITY_EDITOR
         Handles.Label(center + Vector3.up, "AI Shoot target area");
-
+#endif
         if (Application.isPlaying)
         {
             Gizmos.color = Color.red;

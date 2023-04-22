@@ -4,8 +4,7 @@ using UnityEditor;
 
 public static class ExportPackage
 {
-
-
+#if UNITY_EDITOR
     [MenuItem("Export/Export with tags and layers, Input settings")]
     public static void export()
     {
@@ -13,5 +12,5 @@ public static class ExportPackage
         AssetDatabase.ExportPackage(projectContent, "Done.unitypackage", ExportPackageOptions.Interactive | ExportPackageOptions.Recurse | ExportPackageOptions.IncludeDependencies);
         Debug.Log("Project Exported");
     }
-
+#endif
 }
